@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="学习"><!--注释符合-->
+<meta name="description" content="我在学习">
+<title>首页</title>
+</head>
+<body>
+<h1>学习中额</h1>
+
+<!--html5中常用的实体-->
+	<h2>&lt;</h2> <!--<-->
+	<h2>&gt;</h2>  <!-->-->
+	<h2>&amp;</h2>   <!--&-->
+	<h2>&laquo;</h2>   <!--<<-->
+	<h2>&raquo;</h2>   <!--2个大于号-->
+	<h2>&times;</h2>   <!--x-->
+	
+<!--颜色
+#ff0000 红
+#00ff00 绿
+#0000ff 蓝
+#000000 黑
+#ffffff 白
+#ffff00 黄
+#00ffff 青
+#ff00ff 紫
+#cccccc 灰
+-->
+
+<!--常用标签
+<p align="center/left/right">p分段标签，align是它属性调位置的</p>
+
+<center>让中间的内容居中，现在不常用了</center>
+
+<img src="" alt="" width="" height=""> 引入图片，alt是图片显示不出时显示的文字,宽高可不写
+
+<nobr> 让整排不换行，双标签</nobr>
+
+<pre>让里面的内容保持代码里的原书写格式输出</pre>
+
+h1-h6
+u 下划线
+i 斜体
+b 加粗
+-->	
+<h2></h2>
+<h1>学习中额</h1>
+</body>
+</html>
