@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="学习"><!--注释符合-->
+<meta name="description" content="我在学习">
+<title>首页</title>
+</head>
+<body>
+<!--超链接-->
+<a href="http://www.baidu.com" target="_blank">百度一下</a>
+<!--
+title在任何一个标签都可使用，鼠标放上去显示title内容
+
+target:1._blank //新窗口
+2._self//本窗口
+3._parent//父窗口
+4._top//顶窗口
+5.窗口名称//窗口名称
+-->
+<hr>
+表格
+<h1>用户表</h1>
+<table border="1px" cellspacing="0px" width="100%" >
+<!--   <caption>用户表</caption>   -->
+	<tr>
+		<th>编号</th>
+		<th>用户名</th>
+		<th>密码</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr><tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<!--
+	colspan 合并行
+	rowspan和并列
+	-->
+
+
+</table>
+
+
+<form action="" method="" enctype="multipart/form-data"><!--当有文件时必须带enctype属性，没时可省略-->
+用户名
+<input type="text" name="username" maxlength="6" readonly><!--最大6字符，只读-->
+<hr>
+密码
+<input type="password" name="password" disabled> <!--停用-->
+<hr>
+邮箱
+<input type="text" name="mail">
+<hr>
+电话
+<input type="text" name="phone">
+<hr>
+<input type="file" name="img">
+<hr>
+下拉菜单
+<select name="city">
+	<option>北京</option>
+	<option>上海</option>
+	<option>广州</option>
+</select>
+<hr>
+单选按钮
+<label><input type="radio" name="sex">男</label>
+<label><input type="radio" name="sex">女</label>
+<label><input type="radio" name="sex">>中</label>
+<hr>
+多选
+<label><input type="checkbox" name="love">篮球</label>
+<label><input type="checkbox" name="love">足球</label>
+<label><input type="checkbox" name="love">排球</label>
+<label><input type="checkbox" name="love">皮球</label>
+<hr>
+文本域/留言
+<textarea name="mess" cols="50" rows="10"></textarea>
+<hr>
+<input type="submit" value="提交">
+<input type="reset" value="取消">
+
+</form>
+<hr>
+
+
+
+
+
+
+</body>
+</html>
