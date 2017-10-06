@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="学习"><!--注释符合-->
+<meta name="description" content="我在学习">
+<title>首页</title>
+</head>
+<body>
+任何一个标签都共有的属性：id,class,title,style
+
+语义化标签：article,footer,header,nav,section
+视频和音频
+<video src="" controls="controls" width=""></video>
+<audio src="" controls="controls"></audio>
+</body>
+</html>
