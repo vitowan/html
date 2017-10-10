@@ -1,0 +1,14 @@
+在浏览器的标签页显示网站标志图标（或指定图标）的方法
+对于不同的浏览器，方法是有差别的
+1.对于IE或TT浏览器：把需要显示的16x16像素的ICO图标命名为favicon.ICO放置在网站根目录下，浏览器会自动检索
+2.这大概是所有浏览器通用的在标签页加入指定图标的方法：
+把favicon.ico图标放到网站根目录下，在网页的<head></head>中加入
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ 
+3.对于火狐浏览器：图标格式没有IE那么严格，GIF和PNG格式的图标也可以显示，图标名称也可以不是favcion
+4.把图标放在根目录后，在<head></head>中加入
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="gif_favicon.gif" type="image/gif" >
+或
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="png_favicon.png" type=" image/png" >
