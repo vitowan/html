@@ -1,0 +1,12 @@
+
+nofollow有两种用法：
+1.用于meta元标签：
+<meta name="robots" content="nofollow" />
+告诉爬虫该页面上所有链接都无需追踪。
+
+
+2.用于a标签：
+<a href="login.aspx" rel="nofollow">登录</a>
+告诉爬虫该链接的页面无需追踪。
+
+作用：可以减少权重向外流流失。
