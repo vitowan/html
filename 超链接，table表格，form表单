@@ -101,7 +101,69 @@ tableLayout 属性用来显示表格单元格、行、列的算法规则。
 
 
 
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .wrap{
+            width:505px;
+            height:230px;
+            margin:0 auto;
+        }
+        table>thead>tr{
+            height:54px;
+            background:#ffc0cb;
+        }
 
+        table>tfoot>tr{
+            height:65px;
+            background:#ffc0cb;
+        }
+        table>tbody .td1{
+            width:104px;
+            background:#ff8c00;
+        }
+        table>tbody .td2{
+            background:#ffa500;
+        }
+    </style>
+</head>
+<body>
+<table class="wrap" cellspacing="0">
+    <thead>
+    <tr>
+        <td colspan="2">网页头部</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="td1">
+            <table>
+                <tr>
+                    <td>html</td>
+                </tr>
+                <tr>
+                    <td>css</td>
+                </tr>
+                <tr>
+                    <td>js</td>
+                </tr>
+            </table>
+        </td>
+        <td class="td2">右侧内容</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2">版权</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>
 
 -->
 
