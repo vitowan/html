@@ -222,3 +222,66 @@ tableLayout 属性用来显示表格单元格、行、列的算法规则。
 
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        form{
+            width:500px;
+            height:600px;
+            margin:50px auto;
+        }
+        input{
+            margin-top:20px;
+/*            height:30px;*/
+            color:#666;
+        }
+/*        textarea{
+            width:300px;
+            height:200px;
+        }*/
+    </style>
+</head>
+<body>
+<form action="test.php" name="信息列表" method="post">
+    请输入账号：<input type="text" value="输入账号" size="10" maxlength="5"><br>
+    请输入密码：<input type="password" value="输入密码" readonly><br>
+    性别：<label><input type="radio" name="sex" checked="checked"/>男</label>
+    <label> <input type="radio" name="sex" id="sex"/>女</label><br>
+    保存：<input type="button" value="保存"><br>
+    喜欢的美食：<input type="checkbox" name="food" id="food" ><label for="food">炸鸡</label>
+    <input type="checkbox" name="food" disabled>鸡排<br>
+    <input type="reset" value="信息重置"><br>
+    上传照片：<input type="file"><br>
+    隐藏域：<input type="hidden" value="银鲳鱼"><br>
+
+    城市：
+    <select name="city" id="">
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>杭州</option>
+    </select>
+    <select name="city">
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>杭州</option>
+    </select><br>
+    留言：<br><textarea cols="20" rows="10" style="resize:none">
+            </textarea><br>
+    <input type="image" src="images/Koala.jpg" alt="考拉" width="50" height="40" value="提交按钮" title="考拉"><br> 图片提交按钮
+    <input type="submit" name="提交">
+
+</form>
+</body>
+</html>
