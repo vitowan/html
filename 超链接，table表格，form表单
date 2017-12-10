@@ -175,13 +175,13 @@ tableLayout 属性用来显示表格单元格、行、列的算法规则。
 
 <form action="" method="" enctype="multipart/form-data"><!--当有文件时必须带enctype属性，没时可省略-->
 用户名
-<input type="text" name="username" maxlength="6" readonly><!--最大6字符，只读-->
+<input type="text" name="username" maxlength="6" readonly size="10"><!--最大6字符，只读 框的长度10px-->
 <hr>
 密码
-<input type="password" name="password" disabled> <!--停用-->
+<input type="password" name="password" disabled> <!--停用--> 
 <hr>
 邮箱
-<input type="text" name="mail">
+<input type="text" name="mail" placeholder="输入邮箱"><!--类似于value-->
 <hr>
 电话
 <input type="text" name="phone">
