@@ -12,3 +12,7 @@
 或
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" href="png_favicon.png" type=" image/png" >
+
+
+培训老师的写法：
+<link href="favicon.ico" rel="icon">
