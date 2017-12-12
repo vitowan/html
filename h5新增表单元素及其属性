@@ -1,0 +1,75 @@
+    color 用在input字段，主要用于选取颜色
+       <input type="color"/>
+    日期时间：
+        date 允许从一个日期选择到另一个日期（年/月/日）
+            <input type="date"/>
+        datetime 允许手动输入日期时间（UTC时间）
+            <input type="datetime" value="2017/12/11"/>
+        datetime-local 允许选择一个日期时间（无时区，年/月/日、时/分）
+            <input type="datetime-local"/>
+        month 允许选择一个年份和月份
+            <input type="month"/>
+       week 允许选择一个年份对应的周数（年/周）
+            <input type="week"/>
+       time 允许选择一个时间（时：分）
+            <input type="time"/>
+   email 用于包含e-mail地址的输入域，提交表单的时候会自动验证e-mail的输入值
+        <input type="email"/>
+   tel 用于输入电话号码（触屏网页的开发），在电脑端不会生效，在手机端点击type为tel
+        类型的输入域，跳出虚拟键盘为电话键盘（0-9数字、*、#）
+        <input type="tel" value="请输入电话号码"/>
+
+   number 用于应该包含数值的输入域，使用一些属性规定对数字类型的限制：
+        max 最大值
+        min 最小值
+        value 初始值
+        step 步长
+        <input type="number" max="10" min="0" value="3" step="2"/>
+  range 用于包含一个范围内数字值得输入域，显示为滑动条，使用一些属性对数字类型限制：
+        max 最大值
+        min 最小值
+        value 初始值
+        step 步长
+        <input type="range" max="20" min="1" step="1" value="5"/>
+
+    search 主要用于搜索域，例如站点搜索或Google搜索
+        <input type="search" value="搜索框"/>
+    url 主要用于输入URL地址，提交表单时会自动验证URL的值
+        <input type="url" value="输入URL地址"/>
+-->
+
+
+
+
+
+    1、min、max 和 step 属性，用于为包含数字或日期的 input 类型规定限定，number、range
+        max 6 ,min -3,step 3 ,合法数值：-3 ，0，3，6
+    2、multiple 属性，用于显示输入域中选择多个值，适用于file、email
+        <input type="file" value="选择文件" multiple/>
+    3、accept 属性，用于指定上传域可接受的文件类型
+        image/* 上传所有的图片文件
+            image/gif,image/png 既可以上传GIF格式文件，也可以上传png格式文件，两个格式中间用逗号分隔
+        video/* 上传所有的视频文件
+        audio/* 上传所有的音频文件
+        
+     4、novalidate 属性，提交表单时不再验证其合法性，适用于text、search、
+        tel、email、color、range、password
+    <form action="" novalidate|novalidate = "true">
+        <input type="email" value="请输入邮箱地址"/>
+        <input type="submit" value="提交"/>
+    </form>
+    5、placeholder 属性，提供一种提示信息，描述输入域所期待的值
+        <input type="password" placeholder="请输入密码"/>
+    6、pattern 属性，用于input域的模式，正则验证
+        <input type="text" value="请输入三位数字" pattern="[0-9]{3}"/>
+    7、required 属性，验证输入域不能为空
+        <input type="text" placeholder="请输入姓名" required="required"/>
+    8、autofocus 属性，页面载入完成之后，当前表单域自动获取焦点
+        <input type="text" placeholder="请输入班级" autofocus/>
+    9、autocomplete 属性，自动补全
+        <input type="text" name="user" autocomplete="on"/>
+    10、formaction 属性，允许表单添加到不同的提交地址
+        <form action="http://www.jd.com" target="_blank">
+            姓名：<input type="text" name="user" autocomplete="on"/>
+            <input type="submit" value="提交" formaction="http://www.ujiuye.com"/>
+        </form>
